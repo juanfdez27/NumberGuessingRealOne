@@ -4,17 +4,19 @@ public class NumberGuessing {
 
     public static void main(String[]args){
         Scanner keyboard;
-        int pickedNmuber;
+        int pickedNumber;
         int guess;
-        pickedNmuber = (int) (Math.random()*100);
+        pickedNumber = (int) (Math.random()*100);
         keyboard = new Scanner(System.in);
         guess = keyboard.nextInt();
-        System.out.println(pickedNmuber);
+        System.out.println(pickedNumber);
 
-
-
+        if (guess < pickedNumber){
+             System.out.println("Nope, too low. Guess again");
+            }
 
         }
-
     }
+
+
 
