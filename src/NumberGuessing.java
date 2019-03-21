@@ -6,6 +6,7 @@ public class NumberGuessing {
         Scanner keyboard;
         int pickedNumber;
         int guess;
+        System.out.println("Guess the number I am thinking of from 0-100");
         pickedNumber = (int) (Math.random()*100);
         keyboard = new Scanner(System.in);
         guess = keyboard.nextInt();
