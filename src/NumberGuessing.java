@@ -18,7 +18,7 @@ public class NumberGuessing {
             System.out.println("Nope, too high. Guess again");
         }
         else if (guess == pickedNumber){
-            System.out.println("Corect!!!");
+            System.out.println("CORRECT!!! You guessed it!");
         }
     }
     }
