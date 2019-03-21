@@ -14,6 +14,9 @@ public class NumberGuessing {
         if (guess < pickedNumber){
              System.out.println("Nope, too low. Guess again");
             }
+        else if (guess > pickedNumber){
+            System.out.println("Nope, too high. Guess again");
+        }
 
         }
     }
