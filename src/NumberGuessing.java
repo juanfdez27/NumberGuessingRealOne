@@ -11,19 +11,20 @@ public class NumberGuessing {
         keyboard = new Scanner(System.in);
         guess = keyboard.nextInt();
         System.out.println(pickedNumber);
-        if (guess < pickedNumber) {
+
             do {
-                System.out.println("Nope, too low. Guess again");
+                if (guess < pickedNumber) {
+                    System.out.println("Nope, too low. Guess again");
+                }
+                if (guess > pickedNumber) {
+                    System.out.println("Nope, too high. Guess again");
+                }
             }while (guess != pickedNumber);
-            System.out.println("Nope, too low. Guess again");
-        }
-         else if (guess > pickedNumber){
-            do {
-                System.out.println("Nope, too high. Guess again");
-            }while (guess!= pickedNumber);
-            System.out.println("Nope, too high. Guess again");
-        }
-        else if (guess == pickedNumber){
+
+
+
+
+        if (guess == pickedNumber){
             System.out.println("CORRECT!!! You guessed it!");
         }
     }
