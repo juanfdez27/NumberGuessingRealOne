@@ -10,7 +10,7 @@ public class NumberGuessing {
         pickedNumber = (int) (Math.random()*100);
         keyboard = new Scanner(System.in);
         guess = keyboard.nextInt();
-        System.out.println(pickedNumber);
+        
 
             do {
                 if (guess < pickedNumber) {
@@ -19,6 +19,10 @@ public class NumberGuessing {
                 if (guess > pickedNumber) {
                     System.out.println("Nope, too high. Guess again");
                 }
+                keyboard = new Scanner(System.in);
+                guess = keyboard.nextInt();
+
+
             }while (guess != pickedNumber);
 
 
