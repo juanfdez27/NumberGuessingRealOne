@@ -10,7 +10,7 @@ public class NumberGuessing {
         pickedNumber = (int) (Math.random()*100);
         keyboard = new Scanner(System.in);
         guess = keyboard.nextInt();
-        
+
 
             do {
                 if (guess < pickedNumber) {
